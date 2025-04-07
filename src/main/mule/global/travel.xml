@@ -6,5 +6,6 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 		<flow name="travelFlow" doc:id="6708f3d7-8245-44a2-8ab9-ca8ae27d8cce" >
 		<http:listener doc:name="Listener" doc:id="8f2a2079-791f-4a39-b61a-7a649f5c9d8e" config-ref="HTTP_Listener_config" path="${http.listner.path}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="9059d947-d1c4-49c8-a316-96c508984b64" message="===started==="/>
 	</flow>
 </mule>
